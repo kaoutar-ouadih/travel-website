@@ -68,11 +68,12 @@ const MainBanner = () => {
                     </div>
 
                     <Link
-                        to="/search"
-                        className="w-full sm:w-auto px-6 py-3 mt-2 sm:mt-0 rounded-md bg-blue-600 text-white font-semibold text-center"
+                        to="/searchPage" 
+                        className="w-full sm:w-auto px-6 py-3 mt-2 sm:mt-0 rounded-md bg-blue text-white font-semibold text-center"
                     >
                         Search
                     </Link>
+
                 </div>
             </div>
         </div>

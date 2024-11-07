@@ -36,7 +36,7 @@ const Nav = () => {
                     <button className="px-4 py-2 border rounded text-blue-500 border-blue-500 hover:bg-blue-500 hover:text-white">
                         Register
                     </button>
-                    <button className="px-4 py-2 rounded text-white bg-blue-500 hover:bg-blue-600">
+                    <button className="px-4 py-2 rounded text-white bg-blue hover:bg-blue-600">
                         Sign In
                     </button>
                 </div>

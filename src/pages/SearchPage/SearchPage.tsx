@@ -1,7 +1,7 @@
-import CovidRestrictions from "../components/CovidRestrictions"
-import SearchBar from "../components/SearchBar"
-import SearchResult from "../components/SearchResult"
-import SideBar from "../components/SideBar"
+import CovidRestrictions from "../../compenants/CovidRestrictions/CovidRestrictions"
+import SearchBar from "../../compenants/SearchBar/SearchBar"
+import SearchResult from "../../compenants/SearchResult/SearchResult"
+import SideBar from "../../compenants/SideBar/SideBar"
 
 
 const SearchPage = () => {
