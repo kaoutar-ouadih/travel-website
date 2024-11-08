@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
 import SearchPage from './pages/SearchPage/SearchPage' 
 import Home from './pages/Home/Home';
@@ -8,6 +7,9 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Checkout from './pages/checkout/checkout'; // Importez le composant Checkout
 import Footer from './compenants/Footer/Footer';
+import ProductDetailsPage from './pages/Details/ProductDetailsPage';
+import { BrowserRouter as Router,  Routes , Route } from 'react-router-dom';
+
 
 function App() {
   return (
@@ -19,8 +21,10 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/checkout" element={<Checkout />} /> 
-        <Route path='/search' element={<SearchPage/>}> </Route>
+        <Route path='/search' element={<SearchPage/>}/> 
         
+        <Route path='/searchPage' element={<SearchPage/>}> </Route>
+        <Route path='/Product-details' element={<ProductDetailsPage/>}> </Route>
       </Routes>
       <Footer/>
     </Router>

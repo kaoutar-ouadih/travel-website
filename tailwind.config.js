@@ -26,7 +26,8 @@ export default {
         'blue': '#2F80ED',
         'lightBlue': '#2969BF',
         'darkBlue': '#144E9D',
-        'paleYellow': '#FCEFCA'
+        'paleYellow': '#FCEFCA',
+        'yellow': '#FFD723'
       }
     },
   },
