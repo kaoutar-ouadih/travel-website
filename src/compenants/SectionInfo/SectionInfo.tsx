@@ -3,8 +3,8 @@ import flag from '../../assets/flag.png';
 
 const SectionInfo = () => {
     return (
-        <div className="w-full  mt-10 max-w-3xl bg-white shadow-lg rounded-lg ml-0"> 
-            <div className="bg-blue-500 text-white rounded-t-lg px-6 py-4 font-medium text-lg">
+        <div className="w-full h-1/3  mt-8 max-w-3xl bg-white shadow-lg rounded-lg ml-0"> 
+            <div className="flex w-3xl mb-4 text-white  bg-blue p-4 rounded-t-lg">
                 Room 1 &nbsp;&nbsp; 2 adults, 1 double bed and 1 twin bed, Non-smoking
             </div>
             <div className="p-6 space-y-6">

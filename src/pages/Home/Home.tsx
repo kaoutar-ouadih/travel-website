@@ -6,11 +6,10 @@ import Destination from '../../compenants/Destination/Destination'
 import NextTrip from '../../compenants/NextTrip/NextTrip'
 import Hotels from '../../compenants/Hotels/Hotels'
 import LastBanner from '../../compenants/lastBanner/LastBanner'
-import './Home.css'
 
 const Home = () => {
     return (
-        <div className='font-serif'> 
+        <div className='font-serif max-w-[1280px] mx-auto p-8 text-center'> 
             <Nav />
             <MainBanner /> 
             <Warning /> 

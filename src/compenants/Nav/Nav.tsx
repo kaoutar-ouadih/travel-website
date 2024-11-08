@@ -33,8 +33,13 @@ const Nav = () => {
                     </button>
                 </div>
                 <div className="hidden md:flex space-x-4">
-                    <button className="px-4 py-2 border rounded text-blue-500 border-blue-500 hover:bg-blue-500 hover:text-white">
+                <button className="px-4 py-2 border rounded text-blue-500 border-blue-500 hover:bg-blue-500 hover:text-white">
+                <Link
+                        to="/checkout" 
+                        className="w-full sm:w-auto px-6 py-3 mt-2 sm:mt-0 rounded-md bg-blue text-white font-semibold text-center"
+                    >
                         Register
+                    </Link>
                     </button>
                     <button className="px-4 py-2 rounded text-white bg-blue hover:bg-blue-600">
                         Sign In
