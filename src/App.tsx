@@ -7,6 +7,7 @@ import Activites from './pages/Activites/Activites';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Checkout from './pages/checkout/checkout'; // Importez le composant Checkout
+import Footer from './compenants/Footer/Footer';
 
 function App() {
   return (
@@ -18,8 +19,10 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/checkout" element={<Checkout />} /> 
-        <Route path='/searchPage' element={<SearchPage/>}> </Route>
+        <Route path='/search' element={<SearchPage/>}> </Route>
+        
       </Routes>
+      <Footer/>
     </Router>
   )
 
