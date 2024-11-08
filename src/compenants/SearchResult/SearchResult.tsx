@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 const SearchResult = () => {
@@ -35,7 +36,9 @@ const SearchResult = () => {
       {/* card 1 */}
       <div className="flex flex-col lg:flex-row gap-5 rounded-md border-[1px] border-gray5 p-4 relative">
         <div className="lg:w-[200px] xl:w-[285px] h-[190px]">
-          <img src="./assets/lakesideMotel.jpg" className="rounded-md w-full h-full object-cover" alt="lakeside Motel image" />
+          <Link to={"/product-details"}>
+            <img src="./assets/lakesideMotel.jpg" className="rounded-md w-full h-full object-cover" alt="lakeside Motel image" />
+          </Link>
         </div>
         <div className="flex-1">
           <h3 className="font-bold text-xl mb-3">Lakeside Motel Warefront</h3>
@@ -68,7 +71,9 @@ const SearchResult = () => {
       {/* card 2 */}
       <div className="flex flex-col lg:flex-row gap-5 rounded-md border-[1px] border-gray5 p-4">
         <div className="lg:w-[200px] xl:w-[285px] h-[190px]">
-          <img src="./assets/juliaDensResort.png" className="rounded-md w-full h-full object-cover" alt="julia dens resort image" />
+          <Link to={"/product-details"}>
+            <img src="./assets/juliaDensResort.png" className="rounded-md w-full h-full object-cover" alt="julia dens resort image" />
+          </Link>
         </div>
         <div className="flex-1">
           <h3 className="font-bold text-xl mb-2">Julia Dens Resort</h3>
@@ -97,7 +102,9 @@ const SearchResult = () => {
       {/* card 3 */}
       <div className="flex flex-col lg:flex-row gap-5 rounded-md border-[1px] border-gray5 p-4">
         <div className="lg:w-[200px] xl:w-[285px] h-[190px]">
-          <img src="./assets/Aghnim-Scepter-Hotel.jpg" className="rounded-md w-full h-full object-cover" alt="julia dens resort image" />
+          <Link to={"/product-details"}>  
+            <img src="./assets/Aghnim-Scepter-Hotel.jpg" className="rounded-md w-full h-full object-cover" alt="julia dens resort image" />
+          </Link>
         </div>
         <div className="flex-1">
           <h3 className="font-bold text-xl mb-2">Aghnim Scepter Hotel</h3>
@@ -126,7 +133,9 @@ const SearchResult = () => {
       {/* card 4 */}
       <div className="flex flex-col lg:flex-row gap-5 rounded-md border-[1px] border-gray5 p-4">
         <div className="lg:w-[200px] xl:w-[285px] h-[190px]">
-          <img src="./assets/Marineford-Hotel.jpg" className="rounded-md w-full h-full object-cover" alt="julia dens resort image" />
+          <Link to={"/product-details"}>
+           <img src="./assets/Marineford-Hotel.jpg" className="rounded-md w-full h-full object-cover" alt="julia dens resort image" />
+          </Link>
         </div>
         <div className="flex-1">
           <h3 className="font-bold text-xl mb-2">Marineford Hotel</h3>
@@ -155,7 +164,9 @@ const SearchResult = () => {
       {/* card 5 */}
       <div className="flex flex-col lg:flex-row gap-5 rounded-md border-[1px] border-gray5 p-4">
         <div className="lg:w-[200px] xl:w-[285px] h-[190px]">
-          <img src="./assets/Shanghai-Open-House.jpg" className="rounded-md w-full h-full object-cover" alt="julia dens resort image" />
+          <Link to={"/product-details"}>
+            <img src="./assets/Shanghai-Open-House.jpg" className="rounded-md w-full h-full object-cover" alt="julia dens resort image" />
+          </Link>
         </div>
         <div className="flex-1">
           <h3 className="font-bold text-xl mb-2">Shanghai Open House</h3>
@@ -184,7 +195,9 @@ const SearchResult = () => {
       {/* card 6 */}
       <div className="flex flex-col lg:flex-row gap-5 rounded-md border-[1px] border-gray5 p-4">
         <div className="lg:w-[200px] xl:w-[285px] h-[190px]">
-          <img src="./assets/Ocean-Waves-Resort.jpg" className="rounded-md w-full h-full object-cover" alt="julia dens resort image" />
+          <Link to={"/product-details"}>
+            <img src="./assets/Ocean-Waves-Resort.jpg" className="rounded-md w-full h-full object-cover" alt="julia dens resort image" />
+          </Link>
         </div>
         <div className="flex-1">
           <h3 className="font-bold text-xl mb-2">Ocean Waves Resort</h3>
@@ -213,7 +226,9 @@ const SearchResult = () => {
       {/* card 7 */}
       <div className="flex flex-col lg:flex-row gap-5 rounded-md border-[1px] border-gray5 p-4">
         <div className="lg:w-[200px] xl:w-[285px] h-[190px]">
-          <img src="./assets/Maimi-City-frontier.png" className="rounded-md w-full h-full object-cover" alt="julia dens resort image" />
+          <Link to={"/product-details"}>
+            <img src="./assets/Maimi-City-frontier.png" className="rounded-md w-full h-full object-cover" alt="julia dens resort image" />
+          </Link>
         </div>
         <div className="flex-1">
           <h3 className="font-bold text-xl mb-2">Maimi City frontier</h3>
@@ -242,7 +257,9 @@ const SearchResult = () => {
       {/* card 8 */}
       <div className="flex flex-col lg:flex-row gap-5 rounded-md border-[1px] border-gray5 p-4">
         <div className="lg:w-[200px] xl:w-[285px] h-[190px]">
-          <img src="./assets/Oculous-Inn-Stay.png" className="rounded-md w-full h-full object-cover" alt="julia dens resort image" />
+          <Link to={"/product-details"}>
+            <img src="./assets/Oculous-Inn-Stay.png" className="rounded-md w-full h-full object-cover" alt="julia dens resort image" />
+          </Link>
         </div>
         <div className="flex-1">
           <h3 className="font-bold text-xl mb-2">Oculous Inn Stay</h3>
