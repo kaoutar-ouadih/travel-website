@@ -1,4 +1,3 @@
-import React from 'react';
 import lastbanner from  '../../assets/lastBanner.png';
 
 
