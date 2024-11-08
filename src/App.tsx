@@ -1,3 +1,4 @@
+
 import './App.css'
 import Footer from './components/Footer';
 import ProductDetailsPage from './pages/ProductDetailsPage';
@@ -16,6 +17,8 @@ function App() {
       <Footer/>
     </BrowserRouter>
   )
+
+    
 }
 
 export default App

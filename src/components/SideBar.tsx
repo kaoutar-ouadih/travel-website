@@ -1,6 +1,13 @@
+import { useState } from "react"
 
 
 const SideBar = () => {
+    const[isToggleBtnClicked, setIsToggleBtnClicked] = useState(false);
+
+    function toggleButton(){
+        setIsToggleBtnClicked(!isToggleBtnClicked);
+    }
+
   return (
     <div>
         {/* for mobile */}
@@ -40,9 +47,9 @@ const SideBar = () => {
                 </div>
                 <div className="flex justify-between items-center cursor-pointer">
                     <span className="text-gray2 font-light">Set your own budget</span>
-                    <div className="relative">
-                        <div className="w-9 h-[20px] bg-gray4 rounded-xl"></div>
-                        <div className="w-[25px] h-[25px] rounded-full bg-white shadow-lg absolute -top-[3px] -left-1"></div>
+                    <div className="relative" onClick={toggleButton}>
+                        <div className={`w-9 h-[20px]  rounded-xl ${isToggleBtnClicked ? 'bg-blue': 'bg-gray4'}`}></div>
+                        <div className={`w-[25px] h-[25px] rounded-full bg-white shadow-lg absolute -top-[3px] ${isToggleBtnClicked ? 'right-0': '-left-1'}`}></div>
                     </div>
                 </div>
             </div>
@@ -55,23 +62,23 @@ const SideBar = () => {
             <div className="flex w-full border-[1px] border-gray5 rounded-md">
                 <div className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
                     <span>1</span>
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
                 </div> 
                 <div className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
                     <span>2</span>
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
                 </div> 
                 <div className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
                     <span>3</span>
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
                 </div> 
                 <div className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
                     <span>4</span>
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
                 </div> 
                 <div className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
                     <span>5</span>
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
                 </div>          
             </div>
             </div>
