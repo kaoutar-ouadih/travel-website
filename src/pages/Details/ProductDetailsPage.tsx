@@ -1,6 +1,6 @@
-import AvailableRooms from "../components/AvailableRooms"
-import CovidRestrictions from "../components/CovidRestrictions"
-import ProductDetails from "../components/ProductDetails"
+import AvailableRooms from "../../compenants/AvailableRooms/AvailableRooms"
+import CovidRestrictions from "../../compenants/CovidRestrictions/CovidRestrictions"
+import ProductDetails from "../../compenants/ProductDetails/ProductDetails"
 
 const ProductDetailsPage = () => {
   return (
