@@ -7,19 +7,19 @@ const SearchResult = () => {
       <div className="flex flex-col gap-y-4 lg:flex-row lg:justify-between lg:items-center">
         {/* filters */}
         <div className="flex w-full text-xs lg:text-sm border-[1.5px] border-blue rounded-md text-gray2 lg:w-[80%]">
-              <div className="border-r-[1.5px] border-blue py-2 px-3 flex-1">
+              <div className="border-r-[1.5px] border-blue py-2 px-1 md:px-3 flex-1 min-w-[50px]">
                   <span>Our top picks</span>
               </div> 
-              <div className="border-r-[1.5px] border-blue py-2 px-3 flex-2">
+              <div className="border-r-[1.5px] border-blue py-2 px-1 md:px-3 flex-2 min-w-[70px]">
                   <span>Hotel and apartments</span>
               </div>
-              <div className="border-r-[1.5px] border-blue py-2 px-3 flex-1">
+              <div className="border-r-[1.5px] border-blue py-2 px-1 md:px-3 flex-1 min-w-[60px]">
                   <span>Residence</span>
               </div> 
-              <div className="border-r-[1.5px] border-blue py-2 px-3 flex-1">
+              <div className="border-r-[1.5px] border-blue py-2 px-1 md:px-3 flex-1 min-w-[40px]">
                   <span>Resort</span>
               </div> 
-              <div className="py-2 px-3 flex-1">
+              <div className="py-2 px-3 flex-1 min-w-[60px]">
                   <span>Shared Space</span>
               </div>          
         </div>
@@ -48,9 +48,9 @@ const SearchResult = () => {
             <p className="w-[350px] text-sm font-light">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
             <span className="text-sm font-light">1 room 2 days</span>
           </div>
-          <div className="flex justify-between items-end">
-            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit">See availability</button>
-            <div className="flex flex-col items-end">
+          <div className="flex flex-col-reverse sm:flex-row justify-between sm:items-end">
+            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit mt-3 sm:mt-0">See availability</button>
+            <div className="flex flex-col items-start md:items-end">
               <div className="flex gap-2 items-center">
                 <span className="font-bold text-red line-through text-sm">$150</span>
                 <span className="font-bold text-lg">$130</span>
@@ -63,7 +63,7 @@ const SearchResult = () => {
         <div className="bg-red text-white rounded-md py-1 px-3 h-fit absolute lg:top-4 lg:right-4 top-6 right-6">
               <span className="text-xs">Book now and receive 15% off</span>
         </div>
-        <div className="bg-green text-white rounded-md py-1 px-3 text-sm w-fit mb-2 absolute lg:bottom-28 bottom-32 lg:right-4 right-6">5% off</div>
+        <div className="bg-green text-white rounded-md py-1 px-3 text-sm w-fit mb-2 absolute lg:top-20 top-32 lg:right-4 right-6">5% off</div>
       </div>
       {/* card 2 */}
       <div className="flex flex-col lg:flex-row gap-5 rounded-md border-[1px] border-gray5 p-4">
@@ -81,9 +81,9 @@ const SearchResult = () => {
             <p className="w-[350px] text-sm font-light">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
             <span className="text-sm font-light">1 room 2 days</span>
           </div>
-          <div className="flex justify-between items-end">
-            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit">See availability</button>
-            <div className="flex flex-col items-end">
+          <div className="flex flex-col-reverse sm:flex-row justify-between sm:items-end">
+            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit mt-3 sm:mt-0">See availability</button>
+            <div className="flex flex-col items-start md:items-end">
               <div className="flex gap-2 items-center">
                 <span className="font-bold text-red line-through text-sm">$150</span>
                 <span className="font-bold text-lg">$130</span>
@@ -110,9 +110,9 @@ const SearchResult = () => {
             <p className="w-[350px] text-sm font-light">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
             <span className="text-sm font-light">1 room 2 days</span>
           </div>
-          <div className="flex justify-between items-end">
-            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit">See availability</button>
-            <div className="flex flex-col items-end">
+          <div className="flex flex-col-reverse sm:flex-row justify-between sm:items-end">
+            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit mt-3 sm:mt-0">See availability</button>
+            <div className="flex flex-col items-start md:items-end">
               <div className="flex gap-2 items-center">
                 <span className="font-bold text-red line-through text-sm">$150</span>
                 <span className="font-bold text-lg">$130</span>
@@ -139,9 +139,9 @@ const SearchResult = () => {
             <p className="w-[350px] text-sm font-light">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
             <span className="text-sm font-light">1 room 2 days</span>
           </div>
-          <div className="flex justify-between items-end">
-            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit">See availability</button>
-            <div className="flex flex-col items-end">
+          <div className="flex flex-col-reverse sm:flex-row justify-between sm:items-end">
+            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit mt-3 sm:mt-0">See availability</button>
+            <div className="flex flex-col items-start md:items-end">
               <div className="flex gap-2 items-center">
                 <span className="font-bold text-red line-through text-sm">$150</span>
                 <span className="font-bold text-lg">$130</span>
@@ -168,9 +168,9 @@ const SearchResult = () => {
             <p className="w-[350px] text-sm font-light">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
             <span className="text-sm font-light">1 room 2 days</span>
           </div>
-          <div className="flex justify-between items-end">
-            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit">See availability</button>
-            <div className="flex flex-col items-end">
+          <div className="flex flex-col-reverse sm:flex-row justify-between sm:items-end">
+            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit mt-3 sm:mt-0">See availability</button>
+            <div className="flex flex-col items-start md:items-end">
               <div className="flex gap-2 items-center">
                 <span className="font-bold text-red line-through text-sm">$150</span>
                 <span className="font-bold text-lg">$130</span>
@@ -197,9 +197,9 @@ const SearchResult = () => {
             <p className="w-[350px] text-sm font-light">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
             <span className="text-sm font-light">1 room 2 days</span>
           </div>
-          <div className="flex justify-between items-end">
-            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit">See availability</button>
-            <div className="flex flex-col items-end">
+          <div className="flex flex-col-reverse sm:flex-row justify-between sm:items-end">
+            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit mt-3 sm:mt-0">See availability</button>
+            <div className="flex flex-col items-start md:items-end">
               <div className="flex gap-2 items-center">
                 <span className="font-bold text-red line-through text-sm">$150</span>
                 <span className="font-bold text-lg">$130</span>
@@ -226,9 +226,9 @@ const SearchResult = () => {
             <p className="w-[350px] text-sm font-light">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
             <span className="text-sm font-light">1 room 2 days</span>
           </div>
-          <div className="flex justify-between items-end">
-            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit">See availability</button>
-            <div className="flex flex-col items-end">
+          <div className="flex flex-col-reverse sm:flex-row justify-between sm:items-end">
+            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit mt-3 sm:mt-0">See availability</button>
+            <div className="flex flex-col items-start md:items-end">
               <div className="flex gap-2 items-center">
                 <span className="font-bold text-red line-through text-sm">$150</span>
                 <span className="font-bold text-lg">$130</span>
@@ -255,9 +255,9 @@ const SearchResult = () => {
             <p className="w-[350px] text-sm font-light">Reats include a glass of French champagne, parking and a late checkout. Gym included. Flexible cancellation applies</p>
             <span className="text-sm font-light">1 room 2 days</span>
           </div>
-          <div className="flex justify-between items-end">
-            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit">See availability</button>
-            <div className="flex flex-col items-end">
+          <div className="flex flex-col-reverse sm:flex-row justify-between sm:items-end">
+            <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit mt-3 sm:mt-0">See availability</button>
+            <div className="flex flex-col items-start md:items-end">
               <div className="flex gap-2 items-center">
                 <span className="font-bold text-red line-through text-sm">$150</span>
                 <span className="font-bold text-lg">$130</span>
