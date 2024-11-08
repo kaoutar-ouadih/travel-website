@@ -1,9 +1,6 @@
-<<<<<<< HEAD
+
 
 import { BrowserRouter as Router,  Routes , Route } from 'react-router-dom';
-=======
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
->>>>>>> 6a0d41c856af6945d23511a5d7a1027264b388de
 import SearchPage from './pages/SearchPage/SearchPage' 
 import Home from './pages/Home/Home';
 import Discover from './pages/Discover/Discover';
@@ -24,12 +21,7 @@ function App() {
         <Route path="/activites" element={<Activites/>} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-<<<<<<< HEAD
-        <Route path="/checkout" element={<Checkout />} /> 
-        <Route path='/search' element={<SearchPage/>}/> 
-=======
         <Route path="/checkout" element={<Checkout />} />   
->>>>>>> 6a0d41c856af6945d23511a5d7a1027264b388de
         <Route path='/searchPage' element={<SearchPage/>}> </Route>
         <Route path='/Product-details' element={<ProductDetailsPage/>}> </Route>
       </Routes>
