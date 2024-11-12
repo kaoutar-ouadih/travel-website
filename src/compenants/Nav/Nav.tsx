@@ -11,7 +11,7 @@ const Nav = () => {
 
     return (
         <div>
-            <nav className='bg-white p-4 flex items-center justify-between'>
+            <nav className=' p-4 flex items-center justify-between'>
                 {/* Logo et nom du site */}
                 <div className="flex items-center">
                     <img 

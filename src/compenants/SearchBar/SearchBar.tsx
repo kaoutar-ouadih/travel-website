@@ -46,8 +46,8 @@ const SearchBar = () => {
         }
   
   return (
-    <div className="bg-gradient-to-b from-lightBlue to-darkBlue h-[300px] relative flex justify-center">
-      <div className="flex gap-5 flex-col md:flex-row items-center w-[300px] sm:w-[400px] md:w-[760px] lg:w-[990px] mb-20 p-3 shadow-lg rounded-lg mx-auto bg-white absolute md:-bottom-[118px]  -bottom-[160px]">
+    <div className="-top-20 bg-gradient-to-b from-lightBlue to-darkBlue h-[300px] relative flex justify-center">
+      <div className="flex gap-5 flex-col md:flex-row items-center w-[300px] sm:w-[400px] md:w-[760px] lg:w-[990px] mb-20 p-3 shadow-lg rounded-lg mx-auto bg-white absolute md:-bottom-[118px]  -bottom-[220px]">
         {/* where are you going */}
         <div className="flex-1 md:flex-3 relative">
           <input type="search" placeholder="Where are you going?" className="bg-lightGray w-full pl-10 px-4 py-3 rounded outline-none text-gray2 placeholder:text-gray2" />
