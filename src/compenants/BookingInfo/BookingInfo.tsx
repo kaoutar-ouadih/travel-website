@@ -5,6 +5,7 @@ const BookingInfo = () => {
     return (
         <div className="w-full  mt-10 max-w-3xl bg-white shadow-lg rounded-lg ml-0">
             <div className="bg-yellow-500 flex w-3xl mb-6 text-white   p-4 rounded-t-lg">
+                
                 Important information about your booking
             </div>
             <div className="p-4">

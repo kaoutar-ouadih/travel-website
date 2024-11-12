@@ -11,7 +11,7 @@ const LastBanner = () => {
 
             <div className="content mt-8">
                 <h1 className='font-bold text-center items-center text-gray-800 text-2xl'>Explore the world with My Dream place</h1>    
-                <h3 className='font-sans text-blue-500'>Discover new places and experiences</h3>        
+                <h3 className='font-sans text-blue'>Discover new places and experiences</h3>        
             </div>
         </div>
         
