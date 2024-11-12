@@ -1,0 +1,22 @@
+input[type="date"]::-webkit-calendar-picker-indicator {
+    /* position: absolute;
+    left: 7px; */
+    /* z-index: 10; */
+    opacity: 0;
+    /* width: 20px;
+    height: 21px;
+    cursor: pointer;
+    background-color: green; */
+}
+ /* Hide date input placeholder text and calendar icon */
+ .placeholder-hidden::-webkit-datetime-edit-text,
+ .placeholder-hidden::-webkit-datetime-edit-month-field,
+ .placeholder-hidden::-webkit-datetime-edit-day-field,
+ .placeholder-hidden::-webkit-datetime-edit-year-field {
+   color: transparent; 
+ }
+
+ .light-font{
+  font-style: normal;
+  font-weight: 300;
+ }
