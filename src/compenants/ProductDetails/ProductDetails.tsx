@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const ProductDetails = () => {
   return (
-    <div className="px-12 lg:px-24 mt-4">
+    <div className="px-12 lg:px-24 mt-8">
         <div className="flex flex-col md:flex-row gap-5">
             <div className="flex-1 h-[452px] w-full md:min-w-[400px]">
                 <img src="./assets/product-1-picture1.jpg" alt="product1 picture" className="rounded-md w-full h-full object-cover" />

@@ -9,8 +9,10 @@ import PriceDetails from '../../compenants/PriceDetails/PriceDetails';
 
 const Checkout = () => {
     return (
-        <div className='max-w-[1280px] mx-auto p-8 text-center'>
-            <AccountNav />  
+        <div>
+            <AccountNav />
+            <div className='max-w-[1280px] mx-auto p-8 text-center'>
+            
             <h1 className='text-4xl font-semibold flex items-start text-gray-900 mt-12'>Secure your reservation</h1>          
             <Warning />
             <div className="flex flex-col md:flex-row mt-8">
@@ -25,6 +27,9 @@ const Checkout = () => {
                 </div>
             </div>
         </div>
+
+        </div>
+        
     );
 };
 

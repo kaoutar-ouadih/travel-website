@@ -4,7 +4,7 @@ import danger from '../../assets/danger 1.png'
 const Warning = () => {
     return (
         <div>
-            <div className="container bg-yellow-100 w-full mt-10 h-16 rounded-xl">
+            <div className="container bg-amber-200 w-full mt-10 h-16 rounded-xl">
                 <div className='flex gap-3 p-4 items-center pr-2'>
                     <div className="img-warning">
                         <img src={danger} alt="" />
