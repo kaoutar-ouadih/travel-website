@@ -1,4 +1,3 @@
-
 import AvailableRooms from "../../compenants/AvailableRooms/AvailableRooms"
 import CovidRestrictions from "../../compenants/CovidRestrictions/CovidRestrictions"
 import ProductDetails from "../../compenants/ProductDetails/ProductDetails"
