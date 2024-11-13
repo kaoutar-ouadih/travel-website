@@ -27,7 +27,8 @@ export default {
         'lightBlue': '#2969BF',
         'darkBlue': '#144E9D',
         'paleYellow': '#FCEFCA',
-        'yellow': '#FFD723'
+        'yellow': '#FFD723',
+        'facebookColor': '#475993'
       }
     },
   },
