@@ -14,7 +14,7 @@ const Home = () => {
             <Nav />
             <div className="relative">
                 <MainBanner />
-                <div className="absolute bottom-[-5px] left-24 transform-translate-x-1/2 w-full max-w-[90%] ">
+                <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[-95px] w-full max-w-[90%] ">
                     <Search />
                 </div>
             </div>

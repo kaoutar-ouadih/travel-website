@@ -9,6 +9,7 @@ import Contact from './pages/Contact/Contact';
 import Checkout from './pages/checkout/checkout'; // Importez le composant Checkout
 import Footer from './compenants/Footer/Footer';
 import ProductDetailsPage from './pages/Details/ProductDetailsPage';
+import Trips from './pages/Trips';
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
         <Route path="/activites" element={<Activites/>} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/checkout" element={<Checkout />} />   
+        <Route path="/checkout" element={<Checkout />} />  
+        <Route path="/Trips" element={<Trips />} /> 
         <Route path='/searchPage' element={<SearchPage/>}> </Route>
         <Route path='/Product-details' element={<ProductDetailsPage/>}> </Route>
       </Routes>
