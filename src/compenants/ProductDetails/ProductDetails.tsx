@@ -1,7 +1,12 @@
+import { useState } from "react"
 import { Link } from "react-router-dom"
 
 
 const ProductDetails = () => {
+    const [selctedLink, setSelectedLink] = useState("overview");
+
+
+
   return (
     <div className="px-12 lg:px-24 mt-8">
         <div className="flex flex-col md:flex-row gap-5">
@@ -18,12 +23,12 @@ const ProductDetails = () => {
             </div>
         </div>
         <div className="flex mt-7">
-                    <Link to={""} className=" inline-block p-3">Overview</Link>
-                    <Link to={""} className=" inline-block p-3">Rooms</Link>
-                    <Link to={""} className=" inline-block p-3">Guest Reviews</Link>
+                    <Link onClick={()=>setSelectedLink("overview")} to={""} className=" inline-block p-3">Overview</Link>
+                    <Link onClick={()=>setSelectedLink("rooms")} to={""} className=" inline-block p-3">Rooms</Link>
+                    <Link onClick={()=>setSelectedLink("reviews")} to={""} className=" inline-block p-3">Guest Reviews</Link>
         </div>
         <hr />
-        <div className="flex flex-col md:flex-row gap-5 mt-8">
+        {selctedLink ==="overview" && <div className="flex flex-col md:flex-row gap-5 mt-8">
             <div className="flex-1">
                 <h2 className="font-bold text-2xl mb-2">Lakeside Motel Warefront</h2>
                 <div className="flex gap-3 items-center mb-3">
@@ -85,7 +90,8 @@ const ProductDetails = () => {
                 </div>
                 <div className="w-full md:w-[400px]"> 
                     <div>
-                        <img src="./assets/location-on-map.png" alt="the location on the map" className="w-full"/>
+                        {/* the location on the map */}
+                        <iframe className="rounded-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.1490977158196!2d147.97758207464423!3d-37.88019573783565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b25603c3ce52e09%3A0x43dcb144c0dfdd6d!2sLakeside%20Motel%20Waterfront!5e0!3m2!1sfr!2sma!4v1731503681169!5m2!1sfr!2sma"width="400"height="300"style={{ border: 0 }}  loading="lazy"referrerPolicy="no-referrer-when-downgrade"title="Google Map"></iframe>
                     </div>
                     <div>
                         <span className="font-semibold text-lg my-6 block">Explore the area</span>
@@ -122,7 +128,9 @@ const ProductDetails = () => {
                         </div>
                     </div>
             </div>
-        </div>
+        </div>}
+        {selctedLink ==="rooms" && <div className="h-[300px] flex items-center justify-center">Rooms</div>}
+        {selctedLink ==="reviews" && <div className="h-[300px] flex items-center justify-center">Reviews</div>}
     </div>
   )
 }
