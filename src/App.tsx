@@ -9,7 +9,7 @@ import Contact from './pages/Contact/Contact';
 import Checkout from './pages/checkout/checkout'; // Importez le composant Checkout
 import Footer from './compenants/Footer/Footer';
 import ProductDetailsPage from './pages/Details/ProductDetailsPage';
-import Login from './pages/Login/Login';
+import SignIn from './pages/SignIn/SignIn';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/sign-in" element={<SignIn />} />
         <Route path="/discover" element={<Discover />} />
         <Route path="/activites" element={<Activites/>} />
         <Route path="/about" element={<About />} />
