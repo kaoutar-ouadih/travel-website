@@ -10,6 +10,7 @@ import Checkout from './pages/checkout/checkout'; // Importez le composant Check
 import Footer from './compenants/Footer/Footer';
 import ProductDetailsPage from './pages/Details/ProductDetailsPage';
 import SignIn from './pages/SignIn/SignIn';
+import Register from './pages/Register/Register';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/discover" element={<Discover />} />
         <Route path="/activites" element={<Activites/>} />
         <Route path="/about" element={<About />} />

@@ -1,8 +1,8 @@
-import { FormEvent, useState } from "react"
-import { Link } from "react-router-dom"
+import { FormEvent, useState } from "react";
+import { Link } from "react-router-dom";
 
 
-const SignIn = () => {
+const Register = () => {
     const [email, setEmail]= useState("");
     const [password, setPassword]= useState("");
     const [isSignBtnClicked, setIsSignBtnClicked]= useState(false);
@@ -27,7 +27,7 @@ const SignIn = () => {
             <span>my Dream Place</span>
         </div>
         <div className="flex flex-col justify-center items-center mt-16 mb-44">
-            <h1 className="font-bold text-3xl mb-9">Sign in</h1>
+            <h1 className="font-bold text-3xl mb-9">Register</h1>
             <div className="w-[360px] sm:w-[400px]">
                 <form onSubmit={(e)=> handleSubmit(e)} noValidate>
                     <label htmlFor="email" className="block font-semibold">Email address</label>
@@ -47,7 +47,7 @@ const SignIn = () => {
                         </div>
                         <Link to={""} className=" text-lightBlue">Forgot password?</Link>
                     </div>
-                    <button type="submit" className="text-white bg-lightBlue w-full p-3 rounded-md my-7 tracking-wider">Login</button>
+                    <button type="submit" className="text-white bg-lightBlue w-full p-3 rounded-md my-7 tracking-wider">Register</button>
                 </form>
                 <div className="flex items-center gap-3">
                     <hr className="flex-1 h-[1.8px] bg-gray5 border-none" />
@@ -62,11 +62,11 @@ const SignIn = () => {
                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_4_964)"><path d="M17.8048 0H3.19504C1.70664 0 0.5 1.20659 0.5 2.69504V17.3049C0.5 18.7933 1.70659 19.9999 3.19504 19.9999H10.4005L10.4128 12.853H8.55602C8.31472 12.853 8.11887 12.6579 8.11794 12.4166L8.10904 10.1129C8.10811 9.87025 8.30454 9.67308 8.54716 9.67308H10.4005V7.44709C10.4005 4.86384 11.9782 3.45724 14.2827 3.45724H16.1736C16.4155 3.45724 16.6117 3.65339 16.6117 3.89537V5.83789C16.6117 6.07978 16.4157 6.27587 16.1739 6.27602L15.0134 6.27655C13.7602 6.27655 13.5175 6.87207 13.5175 7.74602V9.67313H16.2713C16.5337 9.67313 16.7372 9.90225 16.7063 10.1628L16.4333 12.4666C16.4071 12.687 16.2202 12.8531 15.9982 12.8531H13.5298L13.5175 20H17.8049C19.2933 20 20.4999 18.7934 20.4999 17.305V2.69504C20.4998 1.20659 19.2932 0 17.8048 0Z" fill="white"/></g><defs><clipPath id="clip0_4_964"><rect width="20" height="20" fill="white" transform="translate(0.5)"/></clipPath></defs></svg>
                     <span className="text-white">Continue with Facebook</span>
                 </button>
-                <span className="text-gray2 text-center w-full block">Don’t have an account? <Link to={"/register"} className="text-lightBlue">Register</Link></span>
+                <span className="text-gray2 text-center w-full block">Already have an account? <Link to={"/sign-in"} className="text-lightBlue">Sign in</Link></span>
             </div>
         </div>
     </div>
   )
 }
 
-export default SignIn
+export default Register
