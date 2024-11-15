@@ -12,7 +12,7 @@ const Register = () => {
         e.preventDefault();
         setIsSignBtnClicked(true);
         if(emailPattern.test(email) && password.length>=8){
-            // send data to the backend for authentication
+            // send data to the backend for registration
             // reset the form
             setEmail('');
             setPassword('');

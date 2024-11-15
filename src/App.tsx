@@ -11,6 +11,7 @@ import Footer from './compenants/Footer/Footer';
 import ProductDetailsPage from './pages/Details/ProductDetailsPage';
 import SignIn from './pages/SignIn/SignIn';
 import Register from './pages/Register/Register';
+import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/discover" element={<Discover />} />
         <Route path="/activites" element={<Activites/>} />
         <Route path="/about" element={<About />} />
