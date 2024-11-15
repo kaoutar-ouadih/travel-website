@@ -10,6 +10,7 @@ import Checkout from './pages/checkout/checkout'; // Importez le composant Check
 import Footer from './compenants/Footer/Footer';
 import ProductDetailsPage from './pages/Details/ProductDetailsPage';
 import Trips from './pages/Trips';
+import News from './pages/News/News';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/checkout" element={<Checkout />} />  
         <Route path="/Trips" element={<Trips />} /> 
+        <Route path="/News" element={<News />} />
         <Route path='/searchPage' element={<SearchPage/>}> </Route>
         <Route path='/Product-details' element={<ProductDetailsPage/>}> </Route>
       </Routes>

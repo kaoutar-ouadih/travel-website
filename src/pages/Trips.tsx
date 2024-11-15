@@ -1,11 +1,11 @@
 import React from 'react'
-import Nav from '../compenants/Nav/Nav'
 import History from '../compenants/History/History'
+import AccountNav from '../compenants/AccountNav/AccountNav'
 
 const Trips = () => {
     return (
         <div>
-            <Nav />
+            <AccountNav />
             
             {/* <h1 className='text-lg font-serif text-gray-800'>Trips</h1> */}
             <History />
