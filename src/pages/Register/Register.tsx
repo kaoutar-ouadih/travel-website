@@ -45,7 +45,7 @@ const Register = () => {
                             <input type="checkbox" id="keep-me-signed-in" className="w-5 h-5" />
                             <label htmlFor="keep-me-signed-in" className="text-gray2">Keep me signed in</label>
                         </div>
-                        <Link to={""} className=" text-lightBlue">Forgot password?</Link>
+                        <Link to={"/forgot-password"} className=" text-lightBlue">Forgot password?</Link>
                     </div>
                     <button type="submit" className="text-white bg-lightBlue w-full p-3 rounded-md my-7 tracking-wider">Register</button>
                 </form>

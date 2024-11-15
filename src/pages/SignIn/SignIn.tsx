@@ -47,7 +47,7 @@ const SignIn = () => {
                         </div>
                         <Link to={"/forgot-password"} className=" text-lightBlue">Forgot password?</Link>
                     </div>
-                    <button type="submit" className="text-white bg-lightBlue w-full p-3 rounded-md my-7 tracking-wider">Login</button>
+                    <button type="submit" className="text-white bg-lightBlue w-full p-3 rounded-md my-7 tracking-wider">Sign in</button>
                 </form>
                 <div className="flex items-center gap-3">
                     <hr className="flex-1 h-[1.8px] bg-gray5 border-none" />
