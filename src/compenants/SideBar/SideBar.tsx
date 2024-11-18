@@ -1,7 +1,11 @@
 import { useState } from "react"
 
+interface SideBarProps{
+    setRatingFilter: (rating: number)=>void
+}
 
-const SideBar = () => {
+
+const SideBar: React.FC<SideBarProps> = ({setRatingFilter}) => {
     const[isToggleBtnClicked, setIsToggleBtnClicked] = useState(false);
 
     function toggleButton(){
@@ -60,26 +64,26 @@ const SideBar = () => {
             <div className="p-5">
             <span className="mb-1 block font-light text-gray2">Show only ratings more than</span>
             <div className="flex w-full border-[1px] border-gray5 rounded-md">
-                <div className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
+                <button onClick={()=>setRatingFilter(1)} className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
                     <span>1</span>
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
-                </div> 
-                <div className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
+                </button> 
+                <button onClick={()=>setRatingFilter(2)} className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
                     <span>2</span>
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
-                </div> 
-                <div className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
+                </button> 
+                <button onClick={()=>setRatingFilter(3)} className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
                     <span>3</span>
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
-                </div> 
-                <div className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
+                </button> 
+                <button onClick={()=>setRatingFilter(4)} className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
                     <span>4</span>
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
-                </div> 
-                <div className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
+                </button> 
+                <button onClick={()=>setRatingFilter(5)} className="flex gap-1 items-center border-r-[1px] border-gray5 py-3 px-2 flex-1">
                     <span>5</span>
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_4_1538)"><path d="M9.00018 12.75L4.59168 15.4425L5.79018 10.4175L1.86768 7.0575L7.01643 6.645L9.00018 1.875L10.9839 6.645L16.1334 7.0575L12.2102 10.4175L13.4087 15.4425L9.00018 12.75Z" fill="#F2994A"/></g><defs><clipPath id="clip0_4_1538"><rect width="18" height="18" fill="white"/></clipPath></defs></svg>
-                </div>          
+                </button>          
             </div>
             </div>
         </div>

@@ -12,6 +12,11 @@ import ProductDetailsPage from './pages/Details/ProductDetailsPage';
 
 
 function App() {
+  
+
+
+
+
   return (
     <Router>
       <Routes>
@@ -21,7 +26,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/checkout" element={<Checkout />} />   
-        <Route path='/searchPage' element={<SearchPage/>}> </Route>
+        <Route path='/searchPage' element={<SearchPage />}> </Route>
         <Route path='/Product-details' element={<ProductDetailsPage/>}> </Route>
       </Routes>
       <Footer/>
