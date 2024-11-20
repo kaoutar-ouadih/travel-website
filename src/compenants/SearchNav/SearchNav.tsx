@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 const SearchNav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -28,10 +29,10 @@ const SearchNav = () => {
                     </button>
                 </div>
                 <div className="hidden md:flex space-x-4">
-                    <button className="px-4 py-2 border rounded text-white border-blue-500 hover:bg-blue-500 hover:text-white">
+                    <button onClick={()=> navigate("/register")} className="px-4 py-2 border rounded text-white border-blue-500 hover:bg-blue-500 hover:text-white">
                         Register
                     </button>
-                    <button className="px-4 py-2 rounded text-white bg-blue hover:bg-blue-600">
+                    <button onClick={()=> navigate("/sign-in")} className="px-4 py-2 rounded text-white bg-blue hover:bg-blue-600">
                             Sign In
                     </button>
                 </div>
