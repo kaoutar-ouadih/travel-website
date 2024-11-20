@@ -1,11 +1,12 @@
 import { useState } from "react"
 
 interface SideBarProps{
-    setRatingFilter: (rating: number)=>void
+    setRatingFilter: (rating: number)=>void,
+    setBudgetFilter: (budget: string)=>void
 }
 
 
-const SideBar: React.FC<SideBarProps> = ({setRatingFilter}) => {
+const SideBar: React.FC<SideBarProps> = ({setRatingFilter, setBudgetFilter}) => {
     const[isToggleBtnClicked, setIsToggleBtnClicked] = useState(false);
 
     function toggleButton(){
@@ -35,19 +36,34 @@ const SideBar: React.FC<SideBarProps> = ({setRatingFilter}) => {
             <span className="px-5 py-4 block border-b-[1px] border-gray5 ">Your budget per day</span>
             <div className="p-5">
                 <div className="mb-2 flex items-center gap-2">
-                    <input type="checkbox" className="w-5 h-5 accent-blue" /> <label htmlFor="" className="font-light">$ 0 - $ 200</label>
+                    <input onChange={(e)=>{ if(e.target.checked){
+                                            setBudgetFilter('$ 0 - $ 200')
+                                            }}} 
+                    type="radio" className="w-5 h-5 accent-blue" id="first-budget" name="budget" /> <label htmlFor="first-budget" className="font-light">$ 0 - $ 200</label>
                 </div>
                 <div className="mb-2 flex items-center gap-2">
-                    <input type="checkbox" className="w-5 h-5 accent-blue" /> <label htmlFor="" className="font-light">$ 200 - $ 500</label>
+                    <input onChange={(e)=>{ if(e.target.checked){
+                                            setBudgetFilter('$ 200 - $ 500')
+                                            }}} 
+                    type="radio" className="w-5 h-5 accent-blue" id="second-budget" name="budget"/> <label htmlFor="second-budget" className="font-light">$ 200 - $ 500</label>
                 </div>
                 <div className="mb-2 flex items-center gap-2">
-                    <input type="checkbox" className="w-5 h-5 accent-blue" /> <label htmlFor="" className="font-light">$ 500 - $ 1,000</label>
+                    <input onChange={(e)=>{ if(e.target.checked){
+                                            setBudgetFilter('$ 500 - $ 1,000')
+                                            }}} 
+                    type="radio" className="w-5 h-5 accent-blue" id="third-budget" name="budget"/> <label htmlFor="third-budget" className="font-light">$ 500 - $ 1,000</label>
                 </div>
                 <div className="mb-2 flex items-center gap-2">
-                    <input type="checkbox" className="w-5 h-5 accent-blue" /> <label htmlFor="" className="font-light">$ 1,000 - $ 2,000</label>
+                    <input onChange={(e)=>{ if(e.target.checked){
+                                            setBudgetFilter('$ 1,000 - $ 2,000')
+                                            }}} 
+                    type="radio" className="w-5 h-5 accent-blue" id="fourd-budget" name="budget"/> <label htmlFor="fourd-budget" className="font-light">$ 1,000 - $ 2,000</label>
                 </div>
                 <div className="mb-4 flex items-center gap-2">
-                    <input type="checkbox" className="w-5 h-5 accent-blue" /> <label htmlFor="" className="font-light">$ 2,000 - $ 5,000</label>
+                    <input onChange={(e)=>{ if(e.target.checked){
+                                            setBudgetFilter('$ 2,000 - $ 5,000')
+                                            }}} 
+                    type="radio" className="w-5 h-5 accent-blue" id="fifth-budget" name="budget"/> <label htmlFor="fifth-budget" className="font-light">$ 2,000 - $ 5,000</label>
                 </div>
                 <div className="flex justify-between items-center cursor-pointer">
                     <span className="text-gray2 font-light">Set your own budget</span>
