@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom"
-import { places } from "../../places"
+import { Place } from "../../Place"
+
+interface SearchResultProps{
+  placesCopie : Place[]
+}
 
 
-const SearchResult = () => {
+const SearchResult: React.FC<SearchResultProps> = ({placesCopie}) => {
   return (
     <div className="flex flex-col gap-y-5">
       <h1 className="text-2xl font-bold">Melbourne : 2,582 search results found</h1>
@@ -35,10 +39,10 @@ const SearchResult = () => {
         </div>
       </div>
       {/* card */}
-      { places.map((item)=>
+      { placesCopie.map((item)=>
         <div key={item.id} className="flex flex-col lg:flex-row gap-5 rounded-md border-[1px] border-gray5 p-4 relative">
           <div className="lg:w-[200px] xl:w-[285px] h-[190px]">
-            <Link to={"/product-details"}>
+            <Link to={`/product-details`}>
               <img src={item.imageUrl} className="rounded-md w-full h-full object-cover" alt="lakeside Motel image" />
             </Link>
           </div>
