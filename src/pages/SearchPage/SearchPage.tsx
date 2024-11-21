@@ -12,10 +12,10 @@ const SearchPage = () => {
         <SearchBar/>
         <div className="flex flex-col md:flex-row  gap-5 px-12 mt-36 xl:px-24">
             <div className="w-[280px]"> 
-                <SideBar/>
+                <SideBar />
             </div>  
             <div className="flex-1">
-                <SearchResult/>
+                <SearchResult />
             </div>
         </div>
         <CovidRestrictions/>
