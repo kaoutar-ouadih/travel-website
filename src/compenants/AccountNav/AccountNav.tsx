@@ -32,11 +32,14 @@ const AccountNav = () => {
         <div className="bg-white shadow-md p-4 w-full relative">
             <nav className="flex justify-between w-full items-center">
                 <div className="flex items-center space-x-2">
-                    <img
-                        src={logo}
-                        alt="my-dream-place"
-                        className="h-5" 
-                    />
+                    <Link to="/">
+                        <img
+                            src={logo}
+                            alt="my-dream-place"
+                            className="h-5" 
+                        />
+                    </Link>
+                    
                 </div>
                 <div className="flex items-center space-x-4">
                     <Link to="/news">

@@ -1,6 +1,7 @@
 
 import banner from '../../assets/mainBanner.jpg';
 
+
 const MainBanner = () => {
     
     return (

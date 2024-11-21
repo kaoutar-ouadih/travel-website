@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import frame14 from '../../assets/Frame 14.png';
+import logo from '../../assets/Frame 14.png'
 
 const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,11 +14,13 @@ const Nav = () => {
             <nav className=' p-4 flex items-center justify-between'>
                 {/* Logo et nom du site */}
                 <div className="flex items-center">
-                    <img 
-                        src={frame14} 
-                        alt="My-Dream-Place" 
-                        className="h-4 w-auto md:h-6 lg:h-6" 
-                    />
+                <Link to="/">
+                        <img
+                            src={logo}
+                            alt="my-dream-place"
+                            className="h-5" 
+                        />
+                    </Link>
                 </div>
                 <div className={`hidden md:flex items-center space-x-8`}>
                     <Link to="/" className="text-gray-600 hover:text-black">Home</Link>
