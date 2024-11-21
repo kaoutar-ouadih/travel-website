@@ -7,6 +7,7 @@ export interface Place{
     reviewsNumber: number;
     currentPrice: number;
     oldPrice?: number;
+    Budget : number;
     rooms: number;
     duration: string;
     discount?: string;

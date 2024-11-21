@@ -13,7 +13,7 @@ const SideBar: React.FC<SideBarProps> = ({setRatingFilter, setBudgetFilter}) => 
         setIsToggleBtnClicked(!isToggleBtnClicked);
     }
 
-  return (
+return (
     <div>
         {/* for mobile */}
         <button className="flex gap-2 md:hidden items-center border-[1px] border-gray5 text-gray2 px-7 py-3 rounded-full">

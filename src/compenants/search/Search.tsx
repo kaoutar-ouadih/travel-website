@@ -47,7 +47,7 @@ const Search = () => {
         }
   
   return (
-      <div className="flex gap-5 flex-col md:flex-row items-center w-[300px] sm:w-[400px] md:w-[760px] lg:w-[990px] mb-20 p-3 shadow-lg rounded-lg mx-auto bg-white absolute md:-bottom-[118px]  -bottom-[160px]">
+    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 max-w-[90%] flex gap-5 flex-col md:flex-row items-center w-[300px] sm:w-[400px] md:w-[760px] lg:w-[990px] mb-20 p-3 shadow-lg rounded-lg bg-white inset-x-0 mx-auto">
         {/* where are you going */}
         <div className="flex-1 md:flex-3 relative">
           <input type="search" placeholder="Where are you going?" className="bg-lightGray w-full pl-10 px-4 py-3 rounded outline-none text-gray2 placeholder:text-gray2" />

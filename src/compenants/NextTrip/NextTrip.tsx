@@ -1,5 +1,6 @@
 import React from 'react';
 import trips from '../../assets/trips.js';
+import { Link } from 'react-router-dom';
 
 const NextTrip = () => {
     return (
@@ -26,6 +27,11 @@ const NextTrip = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="mt-4">
+                <Link to="/Trips" className="text-blue-500 hover:underline">
+                    <p>Check my trips</p>               
+                </Link>
             </div>
         </div>
     );
