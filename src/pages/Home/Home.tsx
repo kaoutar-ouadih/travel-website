@@ -1,6 +1,5 @@
 import Nav from '../../compenants/Nav/Nav';
 import MainBanner from '../../compenants/MainBanner/MainBanner';
-import Destination from '../../../public/assets/Destination';
 import NextTrip from '../../compenants/NextTrip/NextTrip';
 import Hotels from '../../compenants/Hotels/Hotels';
 import LastBanner from '../../compenants/lastBanner/LastBanner';
@@ -21,7 +20,7 @@ const Home = () => {
                 <CovidRestrictions/>
             </div>
             
-            <Destination />
+            {/* <Destination /> */}
             <NextTrip />
             <Hotels />
             <LastBanner />

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import History from '../compenants/History/History'
 import AccountNav from '../compenants/AccountNav/AccountNav'
 

@@ -1,5 +1,4 @@
 import  { useState } from 'react';
-import card from '../../assets/card-tick 1.png';
 
 const PaymentOptions = () => {
     const [selectedOption, setSelectedOption] = useState('card');
@@ -7,7 +6,7 @@ const PaymentOptions = () => {
     return (
         <div className="w-full  mt-10 max-w-3xl p-3 bg-white shadow-lg rounded-lg ml-0">
             <div className="flex w-3xl mb-6 text-white  bg-blue p-4 rounded-t-lg">
-                <img src={card} alt="card-tick" className="w-8 h-8 mr-2" />
+                <img src="./assets/card-tick 1.png" alt="card-tick" className="w-8 h-8 mr-2" />
                 <h2 className="text-2xl font-semibold text-white">Payment Options</h2>
             </div>
             <div className="flex border-b mb-6">

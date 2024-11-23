@@ -1,4 +1,4 @@
-import flag from '../../assets/flag.png';
+
 
 const SectionInfo = () => {
     return (
@@ -35,7 +35,7 @@ const SectionInfo = () => {
                             <select
                                 className="p-3 pl-12 border border-gray-300 rounded-md bg-gray-100 focus:outline-none appearance-none"
                                 style={{
-                                    backgroundImage: `url(${flag})`,
+                                    backgroundImage: `url('./assets/flag.png')`,
                                     backgroundSize: '24px 18px',  // Larger flag icon
                                     backgroundPosition: 'left 8px center',
                                     backgroundRepeat: 'no-repeat',

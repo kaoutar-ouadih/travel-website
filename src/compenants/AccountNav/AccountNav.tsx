@@ -1,12 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/Frame 14.png';
-import notifecation from '../../assets/notification 1.png';
-import profilPic from '../../assets/profil.png';
-import manageLogo from '../../assets/user-square 2.png';
-import tripLogo from '../../assets/bxs-plane-take-off 1.png';
-import walletLogo from '../../assets/wallet-3 1.png';
-import signoutLogo from '../../assets/logout 1.png';
 
 const AccountNav = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +27,7 @@ const AccountNav = () => {
                 <div className="flex items-center space-x-2">
                     <Link to="/">
                         <img
-                            src={logo}
+                            src="./assets/Frame 14.png"
                             alt="my-dream-place"
                             className="h-5" 
                         />
@@ -44,14 +37,14 @@ const AccountNav = () => {
                 <div className="flex items-center space-x-4">
                     <Link to="">
                         <img
-                            src={notifecation}
+                            src="./assets/notification 1.png"
                             alt="notification"
                             className="h-6 w-6 cursor-pointer" 
                         />
                     </Link>
                     <div className="relative profile-menu">
                         <img
-                            src={profilPic}
+                            src="./assets/profil.png"
                             alt="profile"
                             className="h-10 w-10 rounded-full cursor-pointer"
                             onClick={toggleMenu}
@@ -61,25 +54,25 @@ const AccountNav = () => {
                                 <ul className="py-1">
                                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                         <Link to="" className="flex items-center">
-                                            <img src={manageLogo} alt="Manage Account" className="h-5 w-5 mr-2" />
+                                            <img src="./assets/user-square 2.png" alt="Manage Account" className="h-5 w-5 mr-2" />
                                             Manage account
                                         </Link>
                                     </li>
                                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                         <Link to="" className="flex items-center">
-                                            <img src={tripLogo} alt="My Trips" className="h-5 w-5 mr-2" />
+                                            <img src="./assets/bxs-plane-take-off 1.png" alt="My Trips" className="h-5 w-5 mr-2" />
                                             My trips
                                         </Link>
                                     </li>
                                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                         <Link to="" className="flex items-center">
-                                            <img src={walletLogo} alt="Reward and Wallet" className="h-5 w-5 mr-2" />
+                                            <img src="./assets/wallet-3 1.png" alt="Reward and Wallet" className="h-5 w-5 mr-2" />
                                             Reward and wallet
                                         </Link>
                                     </li>
                                     <li className="flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer">
                                         <Link to="/" className="flex items-center">
-                                            <img src={signoutLogo} alt="Sign Out" className="h-5 w-5 mr-2" />
+                                            <img src="./assets/logout 1.png" alt="Sign Out" className="h-5 w-5 mr-2" />
                                             Sign out
                                         </Link>
                                     </li>

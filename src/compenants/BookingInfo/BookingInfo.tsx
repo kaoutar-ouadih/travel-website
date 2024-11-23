@@ -1,4 +1,4 @@
-import lock from '../../assets/lock-circle 1.png';
+
 
 const BookingInfo = () => {
     return (
@@ -21,7 +21,7 @@ const BookingInfo = () => {
                     Complete Booking
                 </button>
                 <div className="flex items-center justify-center text-gray-500 mt-4">
-                    <img src={lock} alt="Secure lock icon" className='mr-2' />
+                    <img src="./assets/lock-circle 1.png" alt="Secure lock icon" className='mr-2' />
                     We use secure transmission and encrypted storage to protect your personal information
                 </div>
             </div>

@@ -1,5 +1,4 @@
 
-import banner from '../../assets/mainBanner.jpg';
 
 
 const MainBanner = () => {
@@ -8,7 +7,7 @@ const MainBanner = () => {
         <div
             className="hero-section relative bg-cover bg-center text-white text-center py-12 px-5 sm:py-16"
             style={{
-                backgroundImage: `url(${banner})`,
+                backgroundImage: `url('./assets/mainBanner.jpg')`,
                 height: '570px',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',

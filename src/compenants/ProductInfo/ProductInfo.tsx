@@ -1,19 +1,16 @@
 
-import product from '../../assets/Product.png'
-import stars from '../../assets/Group.png'
-
 const ProductInfo = () => {
     return (
         <div>
                     <div className="max-w-lg mx-auto mt-9 bg-white rounded-lg shadow-md overflow-hidden ">
-        <img className="w-full h-48 object-cover" src={product} alt="Lakeside Motel Waterfront"/>
+        <img className="w-full h-48 object-cover" src="./assets/Product.png" alt="Lakeside Motel Waterfront"/>
         
         <div className="p-6">
             <h2 className="text-xl font-semibold">Lakeside Motel Waterfront</h2>
             
             <div className="flex items-center mt-2">
             <div className="relative w-24 h-5 overflow-hidden">
-                <img src={stars} alt="Étoiles" className="absolute top-0 left-0 w-45 h-full"/>
+                <img src="./assets/Group.png" alt="Étoiles" className="absolute top-0 left-0 w-45 h-full"/>
                 <div className="absolute top-0 left-0 bg-white" ></div> 
             </div>
             <span className="text-gray-600 ml-2 text-lg">4.5 (1200 Reviews)</span>
