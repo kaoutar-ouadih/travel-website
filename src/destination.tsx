@@ -5,7 +5,7 @@ import img_2 from './japan.jpg';
 import img_3 from './new zealand.jpg';
 import img_4 from './greece.jpg';
 
-let destinations = [
+const destinations = [
     {
         id: 1,
         image: img_1,

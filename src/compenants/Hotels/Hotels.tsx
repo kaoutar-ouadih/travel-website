@@ -1,4 +1,4 @@
-import hotels from '../../assets/hotels';
+import hotels from '../../hotels';
 
 const Hotels = () => {
     return (

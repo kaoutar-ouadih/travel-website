@@ -1,4 +1,3 @@
-import React from 'react';
 import lock from '../../assets/lock-circle 1.png';
 
 const BookingInfo = () => {

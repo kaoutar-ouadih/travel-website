@@ -13,8 +13,8 @@ const AccountNav = () => {
 
     // Fermer le menu lorsqu'on clique en dehors
     useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (!event.target.closest('.profile-menu')) {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (!event.target || !(event.target instanceof Element) || !event.target.closest('.profile-menu')) {
                 setIsOpen(false);
             }
         };

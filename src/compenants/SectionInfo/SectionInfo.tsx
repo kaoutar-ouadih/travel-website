@@ -1,4 +1,3 @@
-import React from 'react';
 import flag from '../../assets/flag.png';
 
 const SectionInfo = () => {

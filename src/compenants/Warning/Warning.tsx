@@ -1,4 +1,4 @@
-import React from 'react'
+
 import danger from '../../assets/danger 1.png'
 
 const Warning = () => {

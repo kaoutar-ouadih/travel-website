@@ -1,5 +1,4 @@
-import React from 'react';
-import destinations from '../../assets/destination';
+import destinations from '../../destination';
 
 const History = () => {
     return (

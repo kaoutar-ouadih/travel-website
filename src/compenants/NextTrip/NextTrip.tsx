@@ -1,4 +1,4 @@
-import trips from '../../assets/trips.js';
+import trips from '../../trips'
 import { Link } from 'react-router-dom';
 
 const NextTrip = () => {

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import product from '../../assets/Product.png'
 import stars from '../../assets/Group.png'
 

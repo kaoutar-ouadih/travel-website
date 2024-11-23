@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import card from '../../assets/card-tick 1.png';
 
 const PaymentOptions = () => {
