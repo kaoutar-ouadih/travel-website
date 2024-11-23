@@ -5,6 +5,7 @@ import Hotels from '../../compenants/Hotels/Hotels';
 import LastBanner from '../../compenants/lastBanner/LastBanner';
 import Search from '../../compenants/search/Search';
 import CovidRestrictions from '../../compenants/CovidRestrictions/CovidRestrictions';
+import Destination from '../../compenants/Destination/Destination';
 
 const Home = () => {
     return (
@@ -20,7 +21,7 @@ const Home = () => {
                 <CovidRestrictions/>
             </div>
             
-            {/* <Destination /> */}
+            <Destination />
             <NextTrip />
             <Hotels />
             <LastBanner />
