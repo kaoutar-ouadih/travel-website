@@ -43,6 +43,8 @@ const SearchNav = () => {
                     <Link to="/discover" className="text-gray-600 hover:text-black">Discover</Link>
                     <Link to="/about" className="text-gray-600 hover:text-black">About</Link>
                     <Link to="/contact" className="text-gray-600 hover:text-black">Contact</Link>
+                    <button onClick={()=> navigate("/register")} className="px-4 py-2 border w-[90px] rounded text-blue border-blue-500 hover:bg-blue hover:text-white">Register</button>
+                    <button onClick={()=> navigate("/sign-in")} className="px-4 py-2 rounded w-[90px] text-white bg-blue hover:bg-white hover:text-blue border border-blue-500">Sign In</button>
                 </div>
             )}
       

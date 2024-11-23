@@ -1,9 +1,8 @@
-import React from 'react';
 import hotels from '../../assets/hotels';
 
 const Hotels = () => {
     return (
-        <div>
+        <div className='mx-12 md:mx-24 text-center'>
             <div className="title mt-10 font-bold text-left mb-3 w-full text-gray-800 text-2xl">
                 <h1 className="font-serif text-gray-800 text-2xl">Popular Hotels</h1>
             </div>

@@ -1,10 +1,8 @@
-import React from 'react';
-
 import destinations from '../../assets/destination';
 
 const Destination = () => {
     return (
-        <div className="main">
+        <div className="main mx-12 md:mx-24 text-center">
             <div className="content relative items-start mr-0 text-left mb-4 mt-10">
                 <h1 className="font-bold text-left text-2xl">Enjoy your dream vacation</h1>
                 <p className='text-gray-600'>

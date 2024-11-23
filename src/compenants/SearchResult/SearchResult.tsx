@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { Place } from "../../Place"
 
 interface SearchResultProps{
@@ -7,6 +7,8 @@ interface SearchResultProps{
 
 
 const SearchResult: React.FC<SearchResultProps> = ({placesCopie}) => {
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col gap-y-5">
       <h1 className="text-2xl font-bold">Melbourne : 2,582 search results found</h1>
@@ -58,7 +60,7 @@ const SearchResult: React.FC<SearchResultProps> = ({placesCopie}) => {
               <span className="text-sm font-light">{item.rooms} room {item.duration}</span>
             </div>
             <div className="flex flex-col-reverse sm:flex-row justify-between sm:items-end">
-              <button className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit mt-3 sm:mt-0">See availability</button>
+              <button onClick={()=>navigate('/checkout')} className="bg-blue tracking-wide text-white rounded-md py-2 px-4 text-sm h-fit mt-3 sm:mt-0">Reserve</button>
               <div className="flex flex-col items-start md:items-end">
                 <div className="flex gap-2 items-center">
                   {item.oldPrice && <span className="font-bold text-red line-through text-sm">${item.oldPrice}</span>}

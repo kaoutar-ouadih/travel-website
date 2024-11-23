@@ -3,7 +3,7 @@ import lastbanner from  '../../assets/lastBanner.png';
 
 const LastBanner = () => {
     return (
-        <div className="main">
+        <div className="main mx-12 md:mx-24 text-center">
             <img
                 src={lastbanner} 
                 alt="last banner" 

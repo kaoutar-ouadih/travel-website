@@ -1,10 +1,9 @@
-import React from 'react';
 import trips from '../../assets/trips.js';
 import { Link } from 'react-router-dom';
 
 const NextTrip = () => {
     return (
-        <div>
+        <div className='mx-12 md:mx-24 text-center'>
             <div className="title mt-10 font-bold text-left mb-3 w-full text-gray-800 text-2xl">
                 <h1>Get inspiration for your next trip</h1>
             </div>
